@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .search-bar {
+            background-color: #33225c;
+            padding: 10px;
+            text-align: center;
+        }
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff0000;
+            color: rgb(255, 255, 255);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-bar input[type="submit"]:hover {
+            background-color: #ff0000;
+        }
+        .banner {
+            background-color: #ecedf5;
+            padding: 20px;
+            text-align: center;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .category {
+            text-align: center;
+            width: 30%;
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .category h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+        <form action="/search" method="get">
+            <input type="text" name="query" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="/70 (copia).jpg" alt="Banner">
+<p>Nos complace presentarles K-pop Bucaramanga, tu espacio digital dedicado a todo lo relacionado con la cultura coreana y el fenómeno global del K-pop en nuestra ciudad. Aquí encontrarás todo lo que necesitas para conectar con la vibrante comunidad de fans y disfrutar de lo mejor de Corea del Sur, sin salir de Bucaramanga. 
+
+    <br> <br>
+    Nuestro sitio está diseñado para ofrecerte una experiencia completa a través de tres categorías principales: <br> <B> K-LOVER / COMUNIDAD K-POP / CRONOGRAMA </B> <br> <br>  </p>
+    </div>
+
+    <!-- Categorías -->
+    <div class="categories">
+        <div class="category">
+            <img src="/la-reina-de-las-lagrimas-d_C3_B3nde-ver.jpg" alt="Categoría 1">
+            <h3>K-LOVER</h3>
+            <P> Sumérgete en el fascinante mundo del K-pop y los K-dramas. En esta sección, encontrarás reseñas detalladas de tus series y grupos favoritos, recomendaciones personalizadas y todo lo que necesitas saber para mantenerte al día con lo último en entretenimiento coreano.</P>
+        </div>
+        <div class="category">
+            <img src="/19.jpg"Categoría 2">
+            <h3>COMUNIDAD K-POP</h3>
+            <p> Conéctate con otros apasionados del K-pop. Aquí podrás interactuar, compartir tus experiencias y hacer nuevos amigos que comparten tu entusiasmo por la cultura coreana. ¡Esta es tu oportunidad para formar parte de una comunidad que celebra el K-pop en Bucaramanga!</p>
+        </div>
+        <div class="category">
+            <img src="/maxresdefault.jpg" alt="Categoría 3">
+            <h3>CRONOGRAMA</h3>
+            <p>Mantente al tanto de todos los eventos relacionados con el K-pop en nuestra ciudad. Desde conciertos y encuentros hasta eventos temáticos, en esta sección te informaremos sobre todo lo que está sucediendo y cómo puedes ser parte de la acción.</p>
+        </div>
+    </div>
+</body>
+</html>
