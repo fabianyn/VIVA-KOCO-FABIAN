@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Agosto 2024</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background-color: #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .day {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            position: relative;
+            min-height: 120px; /* Altura mínima ajustada */
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+        .day:hover {
+            background-color: #f7f9fc;
+        }
+        .day.header {
+            background-color: #d1e3fc;
+            color: #333;
+            font-weight: bold;
+        }
+        .event {
+            background-color: #ffd9e6; /* Color pastel para eventos */
+            color: #333;
+            padding: 8px;
+            margin-top: 5px;
+            font-size: 12px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            text-align: left;
+        }
+        .event:nth-of-type(2n+1) {
+            background-color: #d4e9ff; /* Color pastel alternativo */
+        }
+        .event:nth-of-type(2n) {
+            background-color: #e3f9d6; /* Otro color pastel */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CALENDARIO AGOSTO 2024</h1>
+        <div class="calendar">
+            <div class="day header">Dom</div>
+            <div class="day header">Lun</div>
+            <div class="day header">Mar</div>
+            <div class="day header">Mié</div>
+            <div class="day header">Jue</div>
+            <div class="day header">Vie</div>
+            <div class="day header">Sáb</div>
+
+            <!-- Empty days before August starts -->
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+
+            <!-- Days of August with events -->
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5
+                <div class="event">Evento 1: Reunión de equipo</div>
+            </div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12
+                <div class="event">Evento 2: Conferencia de tecnología</div>
+            </div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25
+                <div class="event">Evento 3: Fiesta de cumpleaños</div>
+            </div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day">31</div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+        </div>
+    </div>
+</body>
+</html>
